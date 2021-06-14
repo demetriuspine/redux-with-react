@@ -1,6 +1,6 @@
 Repositório de aulas ao vivo para estudantes da Turma 14 Tribo B
 
-Este repositório armaena os códigos e scripts fornecidos durante a aula ao vivo pelas pessoas especialista da Trybe.
+Este repositório armazena os códigos e scripts fornecidos durante a aula ao vivo pelas pessoas especialista da Trybe.
 
 
 Começando
