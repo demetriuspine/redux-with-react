@@ -11,10 +11,14 @@ Basta clonar o repositório
 git clone git@github.com:tryber/sd-014-b-live-lectures.git
 ```
 
-Em seguida, acessar o branch do Pull Request da aula seguindo o padrão de nomenclatura dos branches (nome-branch-aula).
+Em seguida, acessar o branch do Pull Request da aula seguindo o padrão de nomenclatura dos branches (lecture/block.day).
 
 Exemplo:
 
 ```sh
-git checkout nome-branch-aula-ao-vivo
+git checkout lecture/3.1
 ```
+
+## Estrutura
+
+Todos os conteúdos dados em aulas estarão no seu respectivo Pull Request! 😉
