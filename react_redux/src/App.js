@@ -1,8 +1,10 @@
 import React from 'react';
+import { Provider } from 'react-redux';
 import './App.css';
 import Player from './components/Player';
 import Sidebar from './components/Sidebar';
 import categories from './data';
+import store from './store';
 
 class App extends React.Component {
   constructor() {
@@ -16,13 +18,15 @@ class App extends React.Component {
     const { categories } = this.state;
     return (
       <div className="App">
-        <header className="header">
-          <h1>TrybeFlix</h1>
-        </header>
-        <main class="App-main">
-          <Player />
-          <Sidebar categories={ categories } />
-        </main>
+        <Provider store={ store }>
+          <header className="header">
+            <h1>TrybeFlix</h1>
+          </header>
+          <main class="App-main">
+            <Player />
+            <Sidebar categories={ categories } />
+          </main>
+        </Provider>
       </div>
     );
   }
