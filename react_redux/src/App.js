@@ -2,9 +2,18 @@ import React from 'react';
 import './App.css';
 import Player from './components/Player';
 import Sidebar from './components/Sidebar';
+import categories from './data';
 
 class App extends React.Component {
+  constructor() {
+    super();
+
+    this.state = {
+      categories: categories
+    }
+  }
   render(){
+    const { categories } = this.state;
     return (
       <div className="App">
         <header className="header">
@@ -12,7 +21,7 @@ class App extends React.Component {
         </header>
         <main class="App-main">
           <Player />
-          <Sidebar />
+          <Sidebar categories={ categories } />
         </main>
       </div>
     );
