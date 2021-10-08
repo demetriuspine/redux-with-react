@@ -1,4 +1,6 @@
-function movieReducer(state, action) {
+import categories from "../data";
+
+function movieReducer(state = { categories }, action) { // aqui é difinido o state
   return state;
 }
 
