@@ -1,6 +1,8 @@
 import React from 'react';
 import { connect } from 'react-redux';
 
+import * as movieActions from '../actions/movieActions'; // importando TUDO como movieActions 
+
 export default connect(mapStateToProps)(class Sidebar extends React.Component {
 
   render() {
@@ -15,7 +17,14 @@ export default connect(mapStateToProps)(class Sidebar extends React.Component {
               <ul>
                 {
                   category.movies.map(movie => (
-                    <li key={movie.id}>{movie.title} was released in {movie.released}</li>
+                    <li key={movie.id}>
+                      <button
+                        type="button"
+                        onClick={()=> console.log('clicou')}
+                      >
+                        {movie.title} was released in {movie.released}
+                      </button>
+                    </li>
                   ))
                 }
               </ul>
