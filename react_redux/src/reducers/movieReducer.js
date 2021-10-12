@@ -1,6 +1,12 @@
 import categories from "../data";
 
-function movieReducer(state = { categories: categories }, action) { // aqui é definido o state
+const INITIAL_STATE = {
+  selectedCategory: {},
+  selectedMovie: {},
+  categories: categories,
+}
+
+function movieReducer(state = INITIAL_STATE, action) { // aqui é definido o state
   return state;
 }
 
