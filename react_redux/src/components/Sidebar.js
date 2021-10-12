@@ -44,6 +44,6 @@ function mapStateToProps(state) { //recebe como parâmetro o estado global
 
 function mapDispatchToProps(dispatch) {
   return {
-    dispararAcaoSelecionarFilme: () => dispatch(movieActions.selectedMovie)
+    dispararAcaoSelecionarFilme: () => dispatch(movieActions.selectedMovie())// agora é uma função
   }
 }
