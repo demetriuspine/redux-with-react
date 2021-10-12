@@ -1,4 +1,5 @@
 import React from 'react'
+import { connect } from 'react-redux';
 
 class Sidebar extends React.Component {
 
@@ -26,4 +27,4 @@ class Sidebar extends React.Component {
   }
 }
 
-export default Sidebar
+export default connect()(Sidebar)
