@@ -27,4 +27,4 @@ class Sidebar extends React.Component {
   }
 }
 
-export default connect()(Sidebar)
+export default connect(mapStateToProps(), mapDispatchToProps())(Sidebar)
