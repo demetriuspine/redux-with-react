@@ -22,7 +22,7 @@ class App extends React.Component {
           <header className="header">
             <h1>TrybeFlix</h1>
           </header>
-          <main class="App-main">
+          <main className="App-main">
             <Player />
             <Sidebar categories={ categories } />
           </main>
