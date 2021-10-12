@@ -7,7 +7,16 @@ const INITIAL_STATE = {
 }
 
 function movieReducer(state = INITIAL_STATE, action) { // aqui é definido o state
-  return state;
+  switch (action.type) {
+    case 'SELECT_MOVIE':      
+      return { // redefindo o stado inicial pela action do tipo 'SELECTED_MOVIE'
+        ...state,
+        selectedCategory: action.category,
+        selectedMovie: action.movie,
+      }
+    default:
+      return state;
+  }
 }
 
 export default movieReducer; // há apenas 1 reducer por arquivo
