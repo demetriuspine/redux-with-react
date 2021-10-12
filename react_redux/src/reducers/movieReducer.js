@@ -1,6 +1,6 @@
 import categories from "../data";
 
-function movieReducer(state = { categories }, action) { // aqui é difinido o state
+function movieReducer(state = { categories: categories }, action) { // aqui é definido o state
   return state;
 }
 
