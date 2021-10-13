@@ -20,7 +20,7 @@ export default connect(mapStateToProps, mapDispatchToProps)(class Sidebar extend
                     <li key={movie.id}>
                       <button
                         type="button"
-                        onClick={()=> dispararAcaoSelecionarFilme()}
+                        onClick={()=> dispararAcaoSelecionarFilme(category.name, movie.title)}
                       >
                         {movie.title} was released in {movie.released}
                       </button>
@@ -44,6 +44,6 @@ function mapStateToProps(state) { //recebe como parâmetro o estado global
 
 function mapDispatchToProps(dispatch) {
   return {
-    dispararAcaoSelecionarFilme: () => dispatch(movieActions.selectedMovie())// agora é uma função
+    dispararAcaoSelecionarFilme: (category, movie) => dispatch(movieActions.selectedMovie(category, movie))// agora é uma função
   }
 }

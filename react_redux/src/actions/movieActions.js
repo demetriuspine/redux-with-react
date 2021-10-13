@@ -1,7 +1,7 @@
-export function selectedMovie() { // nao fazer o default, pois pode-se ter várias actions
+export function selectedMovie(dinamicCategory, dinamicMovie) { // nao fazer o default, pois pode-se ter várias actions
   return {
     type: 'SELECT_MOVIE',
-    category: 'Drama',
-    movie: 'The boy in the striped pajamas'
+    category: dinamicCategory,
+    movie: dinamicMovie,
   }// transformar em uma função que retorna um objeto
 }
