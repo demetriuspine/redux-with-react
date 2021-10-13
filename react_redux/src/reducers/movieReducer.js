@@ -1,8 +1,8 @@
 import categories from "../data";
 
 const INITIAL_STATE = {
-  selectedCategory: {},
-  selectedMovie: {},
+  selectedCategory: '', // o dom não renderiza {}
+  selectedMovie: '',
   categories: categories,
 }
 
